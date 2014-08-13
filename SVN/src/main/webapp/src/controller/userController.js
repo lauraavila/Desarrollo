@@ -21,7 +21,7 @@
             var model = $('#userForm').serializeObject();
             var stringificador =JSON.stringify(model);
             var datos= JSON.parse(stringificador);
-            document.getElementById("rta").innerHTML = "El usuario "+ model.firstName +" " + model.lastName + " nacio el " + model.fecha;
+            document.getElementById("rta").innerHTML = "El usuario "+ model.firstName +" con apellido " + model.lastName + " nacio el " + model.fecha;
             //alert('saved model: '+JSON.stringify(model));
         },
         cancel: function(){
